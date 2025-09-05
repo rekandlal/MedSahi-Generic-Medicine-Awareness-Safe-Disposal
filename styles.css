@@ -16,7 +16,7 @@ body {
 
 }
 
-header {
+.header1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,15 +28,33 @@ header {
   justify-content: space-between;
   z-index: 1000;
 
-  /* Blur + transparency */
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(12px);
+  /* blur */
+    background-color: #fcf5ebcc; 
 
-  /* Border + shadow for depth */
+  /* Glass blur effect */
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+
+  transition: background-color 0.3s cubic-bezier(.42, 0, .58, 1);
+
+  /* shadow */
+  /* add in js part */
+}
+
+/* .header2 {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.733) ;
+} */
+
+header.scrolled {
+  box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* add shadow part active via js  */
+#header1.shadow{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 
 #nav-section {
@@ -77,8 +95,8 @@ header {
 } */
 
 #inOut {
-  height: 60px;
-  width: 130px;
+  height: 55px;
+  width: 120px;
   border-radius: 60px;
   border: 1px solid rgba(0, 0, 0, 0.733);
 
