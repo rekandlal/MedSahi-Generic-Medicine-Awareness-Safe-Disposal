@@ -12,7 +12,15 @@
 }
 
 body {
-  background-color: #FCF5EB;
+  /* background-color: #FCF5EB; */
+background: radial-gradient(
+  circle closest-side at center 35%,  /* 40% vertical → green thoda upar */
+  #B9F2D2   0%,       /* light green start */
+  #B9F2D2   50%,      /* green spread */
+  #FCF5EB 140%,      /* fade into cream */
+  #FCF5EB 150%      /* edges cream */
+);
+
 
 }
 
@@ -97,20 +105,12 @@ header.scrolled {
 }
 
 /* svg icons */
-.consult{
+.size{
  width: 1rem;
  height: 1rem;
 }
 
-.test{
- width: 1rem;
- height: 1rem;
-}
 
-.coin{
- width: 1.2rem;
- height: 1.2rem;
-}
 
 
 
@@ -206,17 +206,17 @@ section {
 }
 
 #home {
-  background: #FCF5EB; 
+/* background: linear-gradient(135deg, #A7F3D0 0%, #FFFFFF 100%); */
 }
 
 #page1 {
-  background: #E3F2FD; 
+  /* background: #E3F2FD;  */
 }
 
 #page2 {
-  background: #E8F5E9; 
+  /* background: #E8F5E9;  */
 }
 
 #contact {
-  background: #FFF3E0; 
+  /* background: #FFF3E0;  */
 }
